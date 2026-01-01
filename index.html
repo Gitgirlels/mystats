@@ -6,25 +6,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Stats - Daily Habit Tracker</title>
-    <!-- Import Baloo 2 font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Import Courier New and fallback monospace fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Particle Canvas Background -->
-    <canvas id="particle-canvas"></canvas>
+    <!-- Typewriter texture overlay -->
+    <div class="paper-texture"></div>
 
     <!-- Sidebar Menu -->
     <nav id="sidebar">
-      <ul>
-        <li><a href="#page1">Home</a></li>
-        <li><a href="#page2">Features</a></li>
-        <li><a href="#page3">Privacy Policy</a></li>
-        <li><a href="#page4">Support &amp; Contact</a></li>
-      </ul>
+      <div class="sidebar-border">
+        <div class="sidebar-header">═ MENU ═</div>
+        <ul>
+          <li><a href="#page1">▸ HOME</a></li>
+          <li><a href="#page2">▸ FEATURES</a></li>
+          <li><a href="#page3">▸ PRIVACY</a></li>
+          <li><a href="#page4">▸ SUPPORT</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div id="container">
@@ -32,19 +34,27 @@
       <section class="page" id="page1">
         <div class="home-container">
           <div class="text-content">
-            <h1>My Stats</h1>
-            <p>Track your daily habits and build better routines</p>
-            <a href="https://apps.apple.com/app/your-app-id" class="app-store-button">
-              Download on the App Store
-            </a>
+            <div class="typewriter-title">
+              <div class="title-underline">MY STATS</div>
+              <div class="subtitle">═══════════════════</div>
+            </div>
+            <p class="tagline">TRACK YOUR DAILY HABITS<br>BUILD BETTER ROUTINES</p>
+            <div class="button-row">
+              <a href="https://apps.apple.com/app/your-app-id" class="typewriter-button">
+                [ DOWNLOAD NOW ]
+              </a>
+            </div>
           </div>
-          <div class="video-container">
-            <div class="app-preview">
-              <img src="app-icon.png" alt="My Stats App Icon" class="app-icon" />
-              <div class="preview-text">
-                <h2>Simple. Powerful. Effective.</h2>
-                <p>Track unlimited tasks and habits</p>
+          <div class="app-preview-container">
+            <div class="typewriter-box">
+              <div class="box-header">— DAILY LOG —</div>
+              <div class="preview-features">
+                <div class="feature-line">▸ UNLIMITED TASKS</div>
+                <div class="feature-line">▸ STREAK TRACKING</div>
+                <div class="feature-line">▸ VISUAL REPORTS</div>
+                <div class="feature-line">▸ COMPLETE PRIVACY</div>
               </div>
+              <div class="box-footer">· · ·</div>
             </div>
           </div>
         </div>
@@ -53,138 +63,212 @@
       <!-- Page 2: Features -->
       <section class="page" id="page2">
         <div class="content">
-          <h1>Track Your Daily Habits</h1>
-          <p>
-            My Stats helps you build better habits through simple daily tracking. Create unlimited tasks, 
-            log your progress, and visualize your streaks and patterns over time.
+          <div class="section-header">
+            <div class="header-line">═══════════════════════════</div>
+            <h1>FEATURES</h1>
+            <div class="header-line">═══════════════════════════</div>
+          </div>
+          
+          <p class="intro-text">
+            MY STATS HELPS YOU BUILD BETTER HABITS THROUGH SIMPLE DAILY TRACKING.
+            CREATE UNLIMITED TASKS, LOG YOUR PROGRESS, AND VISUALIZE YOUR STREAKS
+            AND PATTERNS OVER TIME.
           </p>
-          <br />
           
           <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">📊</div>
-              <h3>Daily Logging</h3>
-              <p>Quickly log your daily tasks with a simple tap. Track everything from exercise to meditation.</p>
+            <div class="typewriter-card">
+              <div class="card-header">[ DAILY LOGGING ]</div>
+              <div class="card-body">
+                QUICKLY LOG YOUR DAILY TASKS WITH A SIMPLE TAP. TRACK EVERYTHING 
+                FROM EXERCISE TO MEDITATION WITH TIMESTAMP PRECISION.
+              </div>
             </div>
             
-            <div class="feature-card">
-              <div class="feature-icon">📈</div>
-              <h3>Visual Reports</h3>
-              <p>See your progress with beautiful charts and statistics. Monthly and yearly views available.</p>
+            <div class="typewriter-card">
+              <div class="card-header">[ VISUAL REPORTS ]</div>
+              <div class="card-body">
+                SEE YOUR PROGRESS WITH CLEAN CHARTS AND STATISTICS. MONTHLY AND 
+                YEARLY VIEWS SHOW YOUR HABITS AT A GLANCE.
+              </div>
             </div>
             
-            <div class="feature-card">
-              <div class="feature-icon">🎯</div>
-              <h3>Streak Tracking</h3>
-              <p>Build momentum with streak counters that motivate you to maintain consistency.</p>
+            <div class="typewriter-card">
+              <div class="card-header">[ STREAK TRACKING ]</div>
+              <div class="card-body">
+                BUILD MOMENTUM WITH STREAK COUNTERS THAT MOTIVATE YOU TO MAINTAIN 
+                CONSISTENCY IN YOUR DAILY ROUTINES.
+              </div>
             </div>
             
-            <div class="feature-card">
-              <div class="feature-icon">🏷️</div>
-              <h3>Custom Categories</h3>
-              <p>Organize tasks with color-coded categories. Create as many tasks as you need.</p>
+            <div class="typewriter-card">
+              <div class="card-header">[ CUSTOM TASKS ]</div>
+              <div class="card-body">
+                ORGANIZE TASKS WITH COLOR-CODED MARKERS. CREATE AS MANY TASKS AS 
+                YOU NEED WITH PERSONALIZED NAMES.
+              </div>
             </div>
             
-            <div class="feature-card">
-              <div class="feature-icon">📱</div>
-              <h3>Clean Interface</h3>
-              <p>Beautiful, minimal design that makes tracking your habits a joy, not a chore.</p>
+            <div class="typewriter-card">
+              <div class="card-header">[ CLEAN INTERFACE ]</div>
+              <div class="card-body">
+                BEAUTIFUL TYPEWRITER-INSPIRED DESIGN THAT MAKES TRACKING YOUR 
+                HABITS A JOY, NOT A CHORE.
+              </div>
             </div>
             
-            <div class="feature-card">
-              <div class="feature-icon">🔒</div>
-              <h3>Privacy First</h3>
-              <p>All your data stays on your device. No accounts, no cloud sync, completely private.</p>
+            <div class="typewriter-card">
+              <div class="card-header">[ PRIVACY FIRST ]</div>
+              <div class="card-body">
+                ALL YOUR DATA STAYS ON YOUR DEVICE. NO ACCOUNTS, NO CLOUD SYNC, 
+                COMPLETELY PRIVATE AND SECURE.
+              </div>
             </div>
           </div>
           
-          <br /><br />
-          <a href="https://apps.apple.com/app/your-app-id" class="app-store-button">
-            Download on the App Store
-          </a>
+          <div class="button-row">
+            <a href="https://apps.apple.com/app/your-app-id" class="typewriter-button">
+              [ DOWNLOAD NOW ]
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- Page 3: Privacy Policy -->
       <section class="page" id="page3">
         <div class="content">
-          <h1>Privacy Policy</h1>
-          <p>
-            My Stats does not collect any data of any kind besides that required by a phone to operate apps. 
-            All habit tracking data is stored locally on your device only.
-          </p>
-          <br />
-          <h2>User Privacy Policy</h2>
-          <p>
-            No data is collected, used, or shared. Your habits, tasks, and statistics remain completely private 
-            and stored only on your device. Users can export or backup their data as needed through iOS features.
-          </p>
-          <br />
-          <h2>Data Storage</h2>
-          <p>
-            All task entries, statistics, and preferences are stored locally on your iPhone using secure iOS 
-            data storage mechanisms. This data is included in your device backups but is never transmitted 
-            to external servers.
-          </p>
-          <a href="https://apps.apple.com/app/your-app-id" class="app-store-button">
-            Download on the App Store
-          </a>
+          <div class="section-header">
+            <div class="header-line">═══════════════════════════</div>
+            <h1>PRIVACY POLICY</h1>
+            <div class="header-line">═══════════════════════════</div>
+          </div>
+          
+          <div class="typewriter-document">
+            <div class="document-section">
+              <div class="section-title">— DATA COLLECTION —</div>
+              <p>
+                MY STATS DOES NOT COLLECT ANY DATA OF ANY KIND BESIDES THAT REQUIRED 
+                BY A PHONE TO OPERATE APPS. ALL HABIT TRACKING DATA IS STORED LOCALLY 
+                ON YOUR DEVICE ONLY.
+              </p>
+            </div>
+            
+            <div class="document-section">
+              <div class="section-title">— USER PRIVACY —</div>
+              <p>
+                NO DATA IS COLLECTED, USED, OR SHARED. YOUR HABITS, TASKS, AND 
+                STATISTICS REMAIN COMPLETELY PRIVATE AND STORED ONLY ON YOUR DEVICE. 
+                USERS CAN EXPORT OR BACKUP THEIR DATA AS NEEDED THROUGH iOS FEATURES.
+              </p>
+            </div>
+            
+            <div class="document-section">
+              <div class="section-title">— DATA STORAGE —</div>
+              <p>
+                ALL TASK ENTRIES, STATISTICS, AND PREFERENCES ARE STORED LOCALLY ON 
+                YOUR iPHONE USING SECURE iOS DATA STORAGE MECHANISMS. THIS DATA IS 
+                INCLUDED IN YOUR DEVICE BACKUPS BUT IS NEVER TRANSMITTED TO EXTERNAL 
+                SERVERS.
+              </p>
+            </div>
+            
+            <div class="document-signature">
+              · · ·<br>
+              DEVELOPED IN AUSTRALIA<br>
+              ONLINE ONLY
+            </div>
+          </div>
+          
+          <div class="button-row">
+            <a href="https://apps.apple.com/app/your-app-id" class="typewriter-button">
+              [ DOWNLOAD NOW ]
+            </a>
+          </div>
         </div>
       </section>
 
-      <!-- Page 4: Support & Contact Information -->
+      <!-- Page 4: Support & Contact -->
       <section class="page" id="page4">
         <div class="content">
-          <h1>Support &amp; Contact</h1>
-          <p>
-            Online only. Developed in Australia
-            <br /><br />
-            Questions, feedback, and feature requests are accepted via the form below.
-            Tell us how My Stats is helping you build better habits!
+          <div class="section-header">
+            <div class="header-line">═══════════════════════════</div>
+            <h1>SUPPORT & CONTACT</h1>
+            <div class="header-line">═══════════════════════════</div>
+          </div>
+          
+          <p class="intro-text">
+            QUESTIONS, FEEDBACK, AND FEATURE REQUESTS ARE ACCEPTED VIA THE FORM BELOW.<br>
+            TELL US HOW MY STATS IS HELPING YOU BUILD BETTER HABITS!
           </p>
-          <br />
+          
           <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
+            <div class="faq-header">— FREQUENTLY ASKED QUESTIONS —</div>
             
             <div class="faq-item">
-              <h3>How do I add a new task?</h3>
-              <p>Tap the "+" button on the Daily Log screen or go to the Tasks tab and create a new task with a custom name and color.</p>
+              <div class="faq-question">▸ HOW DO I ADD A NEW TASK?</div>
+              <div class="faq-answer">
+                TAP THE "+" BUTTON ON THE DAILY LOG SCREEN OR GO TO THE TASKS TAB 
+                AND CREATE A NEW TASK WITH A CUSTOM NAME AND COLOR.
+              </div>
             </div>
             
             <div class="faq-item">
-              <h3>Can I edit past entries?</h3>
-              <p>Yes! Navigate to any previous date in the Archive section and you can add or modify entries.</p>
+              <div class="faq-question">▸ CAN I EDIT PAST ENTRIES?</div>
+              <div class="faq-answer">
+                YES! NAVIGATE TO ANY PREVIOUS DATE IN THE ARCHIVE SECTION AND YOU 
+                CAN ADD OR MODIFY ENTRIES FOR THAT DAY.
+              </div>
             </div>
             
             <div class="faq-item">
-              <h3>What do the different colors mean?</h3>
-              <p>Colors are fully customizable categories that help you organize different types of tasks at a glance.</p>
+              <div class="faq-question">▸ WHAT DO THE DIFFERENT COLORS MEAN?</div>
+              <div class="faq-answer">
+                COLORS ARE FULLY CUSTOMIZABLE MARKERS THAT HELP YOU ORGANIZE DIFFERENT 
+                TYPES OF TASKS AT A GLANCE. YOU CHOOSE THE COLOR FOR EACH TASK.
+              </div>
             </div>
             
             <div class="faq-item">
-              <h3>How are streaks calculated?</h3>
-              <p>Streaks count consecutive days where you've logged at least one entry for that task. They reset if you miss a day.</p>
+              <div class="faq-question">▸ HOW ARE STREAKS CALCULATED?</div>
+              <div class="faq-answer">
+                STREAKS COUNT CONSECUTIVE DAYS WHERE YOU'VE LOGGED AT LEAST ONE ENTRY 
+                FOR THAT TASK. THEY RESET IF YOU MISS A DAY.
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">▸ IS MY DATA BACKED UP?</div>
+              <div class="faq-answer">
+                YOUR DATA IS INCLUDED IN YOUR REGULAR iPHONE BACKUPS (iTUNES/iCLOUD). 
+                ALL DATA REMAINS PRIVATE AND LOCAL TO YOUR DEVICE.
+              </div>
             </div>
           </div>
-          <br />
-          <a href="https://forms.gle/jWeC7we2zM1hmWGP7" target="_blank" class="app-store-button">Send an enquiry</a>
-          <a href="https://apps.apple.com/app/your-app-id" class="app-store-button">
-            Download on the App Store
-          </a>
+          
+          <div class="button-row">
+            <a href="https://forms.gle/jWeC7we2zM1hmWGP7" target="_blank" class="typewriter-button secondary">
+              [ SEND ENQUIRY ]
+            </a>
+            <a href="https://apps.apple.com/app/your-app-id" class="typewriter-button">
+              [ DOWNLOAD NOW ]
+            </a>
+          </div>
         </div>
       </section>
     </div>
 
-    <!-- Stats Modal Feature -->
+    <!-- Stats Modal -->
     <div id="stats-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>🎯 Start Your Streak Today</h2>
-        <p>Join thousands of users building better habits, one day at a time.</p>
+      <div class="modal-content typewriter-box">
+        <span class="close">×</span>
+        <div class="box-header">— START TODAY —</div>
+        <div class="modal-body">
+          JOIN THOUSANDS OF USERS BUILDING<br>
+          BETTER HABITS, ONE DAY AT A TIME.
+        </div>
+        <div class="box-footer">· · ·</div>
       </div>
     </div>
     
-    <!-- The script is written in JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
