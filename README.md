@@ -1,79 +1,106 @@
 # My Stats - Support Website
 
-This is a professional support website for the "My Stats" daily habit tracking app.
+This is a professional support website for the "My Stats" daily habit tracking app, featuring a vintage typewriter aesthetic that matches the app's design.
 
 ## Files Included
 
-1. **index.html** - Main HTML structure
-2. **style.css** - Styling and layout
-3. **script.js** - Interactive features and animations
+1. **index.html** - Main HTML structure with typewriter-themed content
+2. **style.css** - Typewriter aesthetic styling with aged paper background
+3. **script.js** - Interactive features (sidebar, modal, smooth scrolling)
+
+## Design Theme
+
+The website perfectly matches your app's typewriter aesthetic:
+- **Aged Paper Background** (#FAF8F5) - Cream vintage paper
+- **Deep Black Ink** (#1C1C1C) - Typewriter ribbon black
+- **Courier/Monospace Fonts** - Authentic typewriter typography
+- **Box Borders** - Sharp rectangular borders like typewritten documents
+- **Letter Spacing** - Mimics typewriter character spacing
+- **No Gradients** - Pure vintage aesthetic
 
 ## What You Need to Customize
 
-### 1. App Store Link
-Replace `https://apps.apple.com/app/your-app-id` with your actual App Store URL in:
-- index.html (appears 4 times)
+### 1. App Store Link (IMPORTANT!)
+Replace `https://apps.apple.com/app/your-app-id` with your actual App Store URL.
+This link appears **6 times** in index.html:
+- Home page
+- Features page
+- Privacy page (1x)
+- Support page (1x)
 
-### 2. App Icon
-You need to add an app icon image:
-- Create/export your app icon as `app-icon.png`
-- Place it in the same folder as index.html
-- Recommended size: 512x512px or 1024x1024px
-
-### 3. Google Forms Link (Optional)
-The contact form link is currently set to: `https://forms.gle/jWeC7we2zM1hmWGP7`
-- You can keep this if it's your form
+### 2. Google Forms Link (Optional)
+The contact form link is: `https://forms.gle/jWeC7we2zM1hmWGP7`
+- Keep this if it's your form
 - Or create a new Google Form and replace the link
-
-### 4. Color Scheme (Optional)
-The website uses a blue/purple theme matching habit tracking apps:
-- Primary blue: #7eb3d9
-- Accent purple: #9b7ec4
-- Light purple border: #d4a5d4
-
-You can change these in style.css if you want different colors.
 
 ## Features
 
-✅ Responsive design (works on mobile and desktop)
+✅ Typewriter aesthetic matching your app
+✅ Responsive design (mobile and desktop)
 ✅ Smooth scrolling navigation
-✅ Particle background animation
 ✅ Slide-out sidebar menu
 ✅ Modal popup (appears after 3 seconds)
-✅ Feature cards with icons
+✅ Bordered cards and boxes
+✅ Vintage paper texture
 ✅ FAQ section
 ✅ Privacy policy page
 ✅ Google AdSense ready
+✅ Print-friendly styles
+
+## Typography Details
+
+The site uses monospace fonts to match your app:
+- Primary: 'Courier Prime' (loaded from Google Fonts)
+- Fallback: 'Courier New'
+- System fallback: monospace
+
+All text uses letter-spacing to mimic typewriter spacing.
+
+## Color Palette
+
+Matching your app's `TypewriterTheme`:
+```
+Paper:      #FAF8F5  (Aged cream paper)
+Ink:        #1C1C1C  (Deep black ink)
+Faded:      #7A7A7A  (Faded/grey ink)
+Card:       #FFFFFF  (White card)
+Border:     #D4D4D4  (Light border)
+Correction: #C41E3A  (Red correction/strike - used for close button hover)
+```
 
 ## How to Use
 
-1. Replace the App Store links with your actual app URL
-2. Add your app icon image as "app-icon.png"
-3. Upload all files (index.html, style.css, script.js, app-icon.png) to your web hosting
-4. Test the website on different devices
+1. Replace all App Store links (search for "your-app-id")
+2. Upload all files to your web hosting:
+   - index.html
+   - style.css
+   - script.js
+3. Test on different devices
+4. Optionally add app screenshots
 
 ## Optional Enhancements
 
-- Add actual screenshots from your app instead of the placeholder icon
-- Create a demo video showing the app in action
+- Add actual app screenshots in the preview box
+- Include user testimonials in typewriter boxes
 - Add more FAQ items based on user questions
-- Include testimonials or reviews
+- Create additional "document" pages with the same aesthetic
 
 ## Browser Compatibility
 
 Works on all modern browsers:
+- Safari (iOS and macOS)
 - Chrome
-- Safari
 - Firefox
 - Edge
 
 ## Notes
 
-- All data tracking claims are accurate (local storage only)
-- Privacy policy reflects actual app behavior
-- No external dependencies except Google Fonts
+- All styling matches your Swift app's `TypewriterTheme`
+- Privacy policy reflects actual local-only storage
+- No complex animations - keeps the vintage aesthetic pure
 - Lightweight and fast loading
+- Uses semantic HTML for SEO
 
 ---
 
-Need help? Contact me through the original form or create an issue.
+Perfect for showcasing your vintage-themed habit tracking app!
